@@ -1,0 +1,29 @@
+ <HTML>
+
+ 	<!--- Prova --->
+ 	<!--- Podeu veure l'escena funcionant a https://nmartivi.github.io/Realitat-virtual-NM --->
+
+    <HEAD>   
+    	<title>Prova 1</title>
+    	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    	<script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js">  </script>
+    </HEAD>
+
+    <BODY>
+
+    	<a-scene>
+
+        <a-assets>
+          <img id="paisatge" src="recursos/landscape.jpg">
+          <audio id="birds" src="recursos/birds.wav" preload="auto"></audio>
+        </a-assets>
+
+        <a-sky id="image-360" radius="10" src="#paisatge"></a-sky>
+
+        <a-entity sound="src: #birds"></a-entity>
+
+    	</a-scene>
+
+    </BODY>
+  <HTML>
+   
