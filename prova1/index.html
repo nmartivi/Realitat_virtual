@@ -15,7 +15,7 @@
 
         <a-assets>
           <img id="paisatge" src="recursos/landscape.jpg">
-          	<!--- <audio id="birds" src="recursos/chicks.mp3" preload="auto"></audio> --->
+          <audio id="chicks" src="recursos/chicks.mp3" preload="auto"></audio>
         </a-assets>
 
         <a-sky id="image-360" radius="10" src="#paisatge"></a-sky>
@@ -26,8 +26,8 @@
             position="0 0 3" sound="src: url(recursos/rain.mp3); on: click">
         </a-entity>
       
-        <a-entity id="box" geometry="primitive: box" material="color: green"
-            position="3 0 3" sound="src: url(recursos/rain.mp3); on: click">
+        <a-entity id="box" geometry="primitive: box" material="color: red"
+            position="3 0 3" sound="src: #chicks; on: click">
         </a-entity>
       
         <a-camera>
