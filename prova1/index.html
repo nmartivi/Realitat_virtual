@@ -16,11 +16,12 @@
         <a-assets>
           <img id="paisatge" src="recursos/landscape.jpg">
           <audio id="chicks" src="recursos/chicks.mp3" preload="auto"></audio>
+          <audio id="birds" src="recursos/birds.wav" preload="auto"></audio>
         </a-assets>
 
         <a-sky id="image-360" radius="10" src="#paisatge"></a-sky>
 
-       	<!---  <a-entity sound="src: #birds"></a-entity> 	--->
+       	<a-entity sound="src: #birds; autoplay: true"> </a-entity>
       
         <a-entity id="box" geometry="primitive: box" material="color: blue"
             position="0 0 3" sound="src: url(recursos/rain.mp3); on: click">
