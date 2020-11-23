@@ -30,12 +30,10 @@
 
 	        <!--- Text --->
 	        <a-entity
-	          id="instructionText"
-	          mixin="slice font"
-	          slice9="color: #111; height: 5.5; width: 12.5; padding: 0.3"
-	          text="color: #4ef580; width: 12; wrapCount: 35; zOffset: 0.1; value: GUNTERS.\nINSIDE THE OASIS\nLIES HIDDEN AN EGG\nWHOEVER FINDS THE EGG\nWILL INHERIT THE OASIS\nAND HALF A HUNDRED DOLLARS\n~" position="12 10 -9" look-at="0 0 0">
-	            <a-entity sound="src:#rain; autoplay: true;"></a-entity>
-          	</a-entity>
+  		    geometry="primitive: plane; width: 4; height: auto"
+  		    material="color: blue"
+  		    text="value: This text will be 4 units wide.">
+	        </a-entity>
 
 	        <!--- Camera --->
 	        <a-camera>
