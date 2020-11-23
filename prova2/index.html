@@ -1,0 +1,50 @@
+ <HTML>
+
+ 	<!--- Prova 2 --->
+ 	<!--- Podeu veure l'escena funcionant a https://nmartivi.github.io/Realitat-virtual-NM --->
+
+    <HEAD>   
+    	<title>Prova 2</title>
+    	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    	<script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js">  </script>
+    </HEAD>
+
+    <BODY>
+
+    	<a-scene>
+
+	        <!--- Assets --->
+	        <a-assets>
+	          <img id="terrassa" src="recursos/terrassa.jpe">
+	          <audio id="rain" src="recursos/rain.mp3" preload="auto"></audio>
+	        </a-assets>
+
+			<!--- Sky --->
+	        <a-sky id="image-360" radius="10" src="#terrassa"></a-sky>
+
+	        <!--- Sound --->
+	        <a-sound src="src: url(recursos/rain.mp3)" autoplay="true" position="0 2 5"></a-sound>
+
+	        <!--- Box --->
+	        <a-entity id="box" geometry="primitive: box" material="color: blue" position="0 0 3"> </a-entity>
+
+	        <!--- Text --->
+	        <a-entity
+	          id="instructionText"
+	          mixin="slice font"
+	          slice9="color: #111; height: 5.5; width: 12.5; padding: 0.3"
+	          text="color: #4ef580; width: 12; wrapCount: 35; zOffset: 0.1; value: GUNTERS.\nINSIDE THE OASIS\nLIES HIDDEN AN EGG\nWHOEVER FINDS THE EGG\nWILL INHERIT THE OASIS\nAND HALF A HUNDRED DOLLARS\n~" position="12 10 -9" look-at="0 0 0">
+	            <a-entity sound="src:#rain; autoplay: true;"></a-entity>
+          	</a-entity>
+
+	        <!--- Camera --->
+	        <a-camera>
+	        	<a-cursor color="#00ff00"></a-cursor>
+	      	</a-camera>
+
+
+    	</a-scene>
+
+    </BODY>
+  <HTML>
+   
